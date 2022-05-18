@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-primary: 'Roboto', sans-serif;
+  --background-primary: hsla(0, 0%, 0%, 1);
+  --text-color: hsla(240, 9%, 89%, 1);
+  --light-green: hsla(194, 72%, 13%, 1);
+  --dark-green: hsla(192, 65%, 7%, 1);
+  --button-color: hsla(195, 91%, 25%, 1);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--ff-primary);
+  background: var(--background-primary);
+  color: var(--text-color);
+  padding: 11.5rem 16rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.search input {
+  width: 46.2rem;
+  height: 100%;
+  background: var(--dark-green);
+  border-radius: 0.5rem;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: hsla(240, 6%, 51%, 1);
+}
+
+.search button {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  background: var(--button-color);
+  padding: 1.2rem 3.2rem;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 8.7rem;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #4a808c;
+  border-spacing: 0;
+  border-radius: 1.2rem;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+table thead tr th {
+  padding: 1.6rem 4rem;
+}
+
+table tbody tr td {
+  padding: 2.4rem 4rem;
+}
+
+table thead {
+  background-color: var(--light-green);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 160%;
+}
+
+table thead tr th:nth-child(1) {
+  border-radius: 1.2rem 0 0 0;
+}
+
+table thead tr th:nth-child(4) {
+  border-radius: 0 1.2rem 0 0;
+}
+
+table tbody tr:nth-child(even) {
+  background: var(--dark-green);
+}
+
+table tr td {
+  padding: 2.4rem 4rem;
+}
+
+table tr td .infos .user {
+  font-weight: 400;
+}
+
+table tr td:nth-child(1) {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+table tr td img {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+}
+
+table tr td .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+table tbody tr:last-child {
+  border-radius: 0 0 1.2rem 1.2rem;
+}
+
+table tbody tr:last-child td:nth-child(1) {
+  border-radius: 0 0 0 1.2rem;
+}
+
+table tbody tr:last-child td:nth-child(4) {
+  border-radius: 0 0 1.2rem 0;
+}
+
+table button {
+  background: none;
+  color: hsla(355, 91%, 66%, 1);
+  font-size: 2rem;
+  line-height: 160%;
+  cursor: pointer;
+}
